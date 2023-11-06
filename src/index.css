@@ -1,0 +1,42 @@
+/* ======= General CSS ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+.button {
+  background: #ffc74a;
+  color: #785400;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  padding: 1.1rem 3rem;
+  border-radius: 2.2rem;
+  transition: all 0.3s;
+}
+.button:hover {
+  background: #ed6950;
+  color: #fff;
+}
+
+@media (max-width: 575px) {
+  .button {
+    font-size: 1.3rem;
+    padding: 1rem 2.5rem 1.1rem;
+    letter-spacing: 0.5px;
+  }
+}

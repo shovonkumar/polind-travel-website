@@ -1,0 +1,96 @@
+.navbar {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.75rem 0 !important;
+  background: transparent;
+  z-index: 999;
+}
+.navbar-brand img {
+  max-width: 13rem;
+}
+.navbar .nav-link {
+  color: #fff;
+  font-size: 1.7rem;
+}
+.navbar .nav-link:hover {
+  color: #ed6950;
+}
+.nav-item i {
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  color: #ffc74a;
+  font-size: 1.9rem;
+  cursor: pointer;
+}
+
+/* Search Buttton */
+.navbar input {
+  padding: 0.5rem 1.75rem;
+  padding-right: 5rem;
+  font-size: 1.4rem;
+  border-radius: 2.25rem;
+  outline: none;
+  border: none;
+  transition: all 0.5s ease !important;
+  width: 0;
+}
+.navbar .nav-btn {
+  background: transparent;
+  color: #ffc74a;
+  font-size: 1.2rem !important;
+  padding: 0;
+  position: absolute;
+  right: 1.2rem;
+  top: 45%;
+  transform: translateY(-45%);
+}
+.navbar .nav-btn::after {
+  content: "";
+  height: 100%;
+  width: 0.1rem;
+  background: #ffc74a;
+  position: absolute;
+  right: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Mobile Nav Button */
+.navbar .navbar-toggler {
+  font-size: 2.7rem;
+  border: none;
+  line-height: 1;
+}
+.navbar-toggler i {
+  color: #fff;
+  transition: all 0.3s;
+}
+.navbar-toggler i:hover {
+  color: #ed6950;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Offcanvas  */
+@media (max-width: 991px) {
+  .offcanvas-body {
+    background: #111;
+  }
+  .offcanvas-body .navbar-nav {
+    margin-top: 5rem;
+  }
+}
+@media (max-width: 575px) {
+  .navbar-brand img {
+    max-width: 10rem;
+  }
+  .offcanvas {
+    max-width: 70% !important;
+  }
+  .navbar input {
+    padding: 0.5rem 1.5rem;
+    padding-right: 3.5rem;
+  }
+}
