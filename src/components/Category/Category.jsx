@@ -43,7 +43,7 @@ const Category = () => {
         <span>Popular places to discover</span>
         <Slider {...settings}>
           {CategoryData.map((item) => {
-            return <CategoryItem key={item.id} item={item} />;
+            return <CategoryItem key={item.id} data={item} />;
           })}
         </Slider>
       </div>

@@ -16,6 +16,10 @@ a {
 button {
   cursor: pointer;
   border: none;
+  background: transparent;
+}
+section {
+  overflow: hidden;
 }
 .button {
   background: #ffc74a;

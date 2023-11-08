@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 const CategoryItem = (props) => {
-  const { title, subtitle, image } = props.item;
+  const { title, subtitle, image } = props.data;
   const bgStyle = {
     backgroundImage: `url(${image})`,
     backgroundRepeat: "no-repeat",
