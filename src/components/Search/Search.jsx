@@ -31,7 +31,7 @@ const Search = () => {
           </button>
         </form>
         {/* Search Filter */}
-        <div className="search-filter d-flex justify-content-between mx-auto">
+        <div className="search-filter d-flex flex-column flex-md-row justify-content-between align-items-center gap-4 mx-auto">
           <div className="left d-flex gap-4">
             <button className="search-filter-btn">Journey</button>
             <button className="search-filter-btn">Travelers</button>

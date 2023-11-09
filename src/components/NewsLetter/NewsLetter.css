@@ -17,3 +17,14 @@
   color: #ffc74a;
   text-decoration: underline;
 }
+
+@media (max-width: 767px) {
+  .news h2 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 575px) {
+  .news h2 {
+    font-size: 4rem;
+  }
+}

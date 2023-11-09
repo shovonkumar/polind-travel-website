@@ -43,3 +43,14 @@
   object-fit: cover;
   z-index: 5;
 }
+
+@media (max-width: 767px) {
+  .explore .img-container {
+    max-width: 90%;
+  }
+  .explore .img-container::after {
+    top: 2.25rem;
+    left: 2.25rem;
+    border: 0.8rem solid #ffc74a;
+  }
+}

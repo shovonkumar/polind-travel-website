@@ -6,9 +6,19 @@
   padding: 1.75rem 0 !important;
   background: transparent;
   z-index: 999;
+  transition: all 0.3s linear;
+}
+.nav-bg {
+  background: #111;
+  border-bottom: 1px solid #ed6a505d;
+  padding: 1rem 0 !important;
 }
 .navbar-brand img {
   max-width: 13rem;
+  transition: all 0.3s;
+}
+.nav-bg img {
+  max-width: 12rem;
 }
 .navbar .nav-link {
   color: #fff;

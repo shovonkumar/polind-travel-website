@@ -1,17 +1,35 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import logo from "../../assets/images/logo.png";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const [navBg, setNavBg] = useState(true);
   const [search, setSearch] = useState(false);
   const [inputVal, setInputVal] = useState("");
+
+  //for add background to navbar on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 150) {
+        setNavBg(true);
+      } else {
+        setNavBg(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setSearch(!search);
   };
   return (
-    <nav className="navbar navbar-dark navbar-expand-lg">
+    <nav
+      className={`navbar navbar-dark navbar-expand-lg ${navBg ? "nav-bg" : ""}`}
+    >
       <div className="container">
         <a href="/" className="navbar-brand">
           <img src={logo} alt="Website logo" />

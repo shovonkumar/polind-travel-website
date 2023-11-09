@@ -6,8 +6,8 @@ const Explore = () => {
     <section className="explore">
       <div className="container">
         <h2>Explore city</h2>
-        <div className="row gx-5">
-          <div className="col-6">
+        <div className="row gx-5 gy-5">
+          <div className="col-md-6">
             <div className="text">
               <h3>Sandomierz</h3>
               <p className="mb-4 mb-lg-5">
@@ -31,8 +31,8 @@ const Explore = () => {
               <button className="button mt-4">Check Offers</button>
             </div>
           </div>
-          <div className="col-6">
-            <div className="img-container">
+          <div className="col-md-6">
+            <div className="img-container mx-auto">
               <img src={exploreImg} alt="Explore Image" />
             </div>
           </div>

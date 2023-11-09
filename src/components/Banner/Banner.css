@@ -19,7 +19,7 @@
   margin: 0.5rem 0 4rem 0;
 }
 
-@media (max-width: 757px) {
+@media (max-width: 575px) {
   .banner h1 {
     font-size: 5rem;
   }
