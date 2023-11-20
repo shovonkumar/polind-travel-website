@@ -3,7 +3,7 @@ import logo from "../../assets/images/logo.png";
 import "./Navbar.css";
 
 const Navbar = () => {
-  const [navBg, setNavBg] = useState(true);
+  const [navBg, setNavBg] = useState(false);
   const [search, setSearch] = useState(false);
   const [inputVal, setInputVal] = useState("");
 

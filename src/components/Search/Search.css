@@ -6,6 +6,11 @@
   color: #606f81;
   font-size: 3.25rem;
 }
+.search .noplace {
+  font-size: 3rem;
+  color: #606f81;
+  opacity: 0.5;
+}
 
 /* Serach Bar */
 .search-bar {
@@ -55,6 +60,9 @@
   color: #fff;
 }
 .search-filter .left button:hover {
+  background: #88909c;
+}
+.search-filter .left button.active {
   background: #ffc74a;
 }
 .search-filter .right button {
